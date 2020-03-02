@@ -49,8 +49,8 @@
                     <div class="col-md-2"></div>
                     
                     <div class="col-md-8">
-                        <label class="label">Meal Total: </label>
-                        <input clas="form-control" type="number" id="mealTotal" required>
+                        <label class="label">Enter Sentence Here: </label>
+                        <input clas="form-control" type="text" id="sentence" required>
                     </div>
                     
                     <div class="col-md-2"></div>
@@ -62,86 +62,29 @@
                 <!-- creates input field for tip total and tip's raw amount -->
                 <div class="row">
                     
-                    <div class="col-md-2"></div>
+                    <div class="col-md"></div>
                     
-                    <div class="col-md-2">
-                        <label class="label" id="tipTotalDisplay">Tip Total: </label>
+                    <div class="col-md">
+                        <label class="label" id="wordsLeftLabel">Words Left: </label>
                     </div>
                     
-                    <div class="col-md-8">
-                        <label class="label">Rate: </label>
-                        <input clas="form-control" type="number" id="tipTotalPercent" required>
+                    <div class="col-md">
+
                     </div>
 
                 
                 </div>
                 
-            
-                 <!-- creates label to display tax -->
-                <div class="row infoDisplay">
-                    
-                    <div class="col-md-2"></div>
-                    
-                    <div class="col-md-2">
-                        <label class="label" id="taxAmount">Tax: </label>
-                    </div>
-                    
-                    <div class="col-md-8">
-                    </div>
-
-                
-                </div>
-                
-                
-                 <!-- creates label to display grand total -->
-                <div class="row infoDisplay">
-                    
-                    <div class="col-md-2"></div>
-                    
-                    <div class="col-md-2">
-                        <label class="label" id="grandTotal">Grand Total: </label>
-                    </div>
-                    
-                    <div class="col-md-8">
-                    </div>
-
-                
-                </div>
-                
-                
-                <!-- creates button that has js listener attached separetly -->
-                <div class="row">
-                
-                    <div class="col-md-4"></div>
-                    
-                    <div class="col-md-4"><button id="calculateTotal">Calculate</button></div>
-                    
-                    <div class="col-md-4"></div>
-                    
-                </div>
-            
-            
             </section>
+                
             
-            <section>
-                <div id="vueDemo">
-                    <!-- var name for js to ref to dynamically inserting content -->
-                    {{ message }}
-                </div>
-                <div id="vueResult">
-                    <input id='torev' v-model='torev' type='text'>
-                    {{ result }}
-                </div>
-            </section>
+
         
         
         </article>
     
     
     </main>
-    
-    <!-- loads vue.js scripts for helpful console warnings -->
-    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 
     <!-- creates a script reference for tip calculation -->
     <script type="text/javascript" src="scripts.js"></script>

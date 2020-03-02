@@ -1,0 +1,40 @@
+#mealTotal{
+    width: 50%;
+}
+
+h1{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.row{
+    margin-bottom: 50px;
+}
+
+#mealTotal, #tipTotal{
+    margin-right: 5px;
+}
+
+.infoDisplay{
+    margin-bottom: 0;
+}
+
+button{
+    border: none;
+    background: white;
+    font-size: 2em;
+    color: blue;
+}
+
+button:hover{
+    color:lightblue;
+}
+
+/* for all inputs of type number for its input, invokes the webkit to hide the inner spin button */
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+

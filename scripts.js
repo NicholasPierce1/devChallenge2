@@ -8,7 +8,7 @@ const ouputLabel = window.document.getElementById("wordsLeftLabel");
 // creates event handler on user input to extract text, check length, and update label ouput
 userInput.addEventListener("blur", async () => {
     
-    console.log('event fired');
+    
     // extracts text from user and stores its length
     const wordsEntered = userInput.value.split('').length;
 
